@@ -3,7 +3,9 @@
   <head>
     <title>My Page title</title>
     <link rel="icon" href="https://media.istockphoto.com/id/484632838/vector/blue-bird-wearing-sunglasses-waving-a-greeting.jpg?s=612x612&w=0&k=20&c=EDMdEYqEGc9OahIrs0CZiAPFJWP-kvM0gZJFUDtM0nQ=">
-  </head>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
 
   <body>
 	Hello world
@@ -14,7 +16,7 @@
     <h2>Header 2</h2>
     <h3>Header 3</h3>
     <hr>
-    <p title="New title"> This is a test paragraph:<br>This is a new line</p>
+    <p class = "class1" title="New title">This is a test paragraph:<br>This is a new line</p>
     <hr>
      
     <pre>
@@ -37,13 +39,13 @@
             <th>Coolness</th>
         </tr>
         <tr>
-            <td>Anoj</td>
+            <td class= name>Anoj</td>
             <td>18</td>
             <td>10</td>
         </tr>
 
         <tr>
-            <td>Jade</td>
+            <td class = name>Jade</td>
             <td>18</td>
             <td>5</td>
         </tr>
@@ -57,29 +59,36 @@
     </dl>
     <hr>
 
-    <div style="color:blue; background-color: lightsteelblue;">
-        <h1> 1st div</h1>
+    <div id = div1 style="color:blue; background-color: lightsteelblue;">
+        <h1 id="h1-2"> 1st div</h1>
         <p>This text is <b>Bold</b></p>
     </div>
 
     <div style="color:red; background-color: lightcoral;">
         <h2> 2nd div</h2>
     </div>
+    <hr>
+
+    <div id = "div2"> 
+    <h2 id="discordpytitle" class="toCenter toBorder1" style="color: whitesmoke; background-color: rgb(0, 0, 0)"><b> Discord.py Documentation: </b></h3>
+    <iframe class =toCenter src="https://discordpy.readthedocs.io/en/stable/api.html#sticker" height="600" width = 500 style = "border: none;">
+    </iframe>
+    </div>
+
+    <div id = "div3">
+    <h2 class="toCenter toBorder1" style="background-color: white"><b> Fun Video: </b></h3>
+    <iframe class =toCenter id = video1 src = "https://www.youtube.com/embed/PuPvfLRYXi4?si=Xi9FXPElObuqzhAx" height = 400 width = 500>
+    </iframe>
+    </div>
 
     <hr>
-    <h3>Discord.py Documentation: </h3>
-    <iframe src="https://discordpy.readthedocs.io/en/stable/api.html#sticker" height="600" width = 500 style = "border: none;">
-    </iframe>
-    <hr>
-    <h3>Fun Video:</h3>
-    <iframe src = "https://www.youtube.com/embed/PuPvfLRYXi4?si=Xi9FXPElObuqzhAx" height = 400 width = 500>
-    </iframe>
-    <hr>
-    <p>These are some signs &euro;, &#174;, &#9827;, &#8482;</p>
+
+    <div id="div4">
+    <p id = symbols class="toBorder1 toCenter customBorder">These are some signs &euro;, &#174;, &#9827;, &#8482;</p>
 
     <hr>
         <form action="index.html" method = "GET">
-            <label>Name</label><br>
+            <label >Name</label><br>
             <input type="text" name ="username" id="username">
             <br>
             <label for="">School</label>
@@ -90,11 +99,25 @@
             <br>
             <input type="checkbox" name="Currently enrolled?" id = enrolled value="enrolled">
             <br>
+            <div class="dropdown-menu">
+                <button class = "dropdownbutton"><b>Grade Year?</b> </button>
+                    <a href="#">1st Year</a>
+                    <a href="#">2nd Year</a>
+                    <a href="#">3rd Year</a>
+                    <a href="#">4th Year</a>
+
+            </div>
+            <br>
             <input type="submit" name="submitbutton" id = "submitbutton" value = "Submit">
         </form>
+
+    </div>
+
     <hr>
 
-    <a target="_blank" href="https://youtube.com">Click this link</a>
+    <p class = link> <a target="_blank" href="https://youtube.com">Click this link</a></p>
+    <i class = material-icons>cloud</i>
+    <i class = material-icons>computer</i>
     <img alt = "This image contains a dice" height = "20" width = "20" src="https://p.kindpng.com/picc/s/152-1529673_cube-gambling-games-board-game-yahtzee-random-dice.png">
     <br>
     <p>Send me an email: <a href="mailto:anojganesh@gmail.com">anojganesh@gmail.com</a> </p>
